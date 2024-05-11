@@ -358,25 +358,25 @@ var LG=lgsm.value;
 var Cpb=document.getElementById("box_rater").value;
 var TC=document.getElementById("price").value;
 var VT=document.getElementById("days").value;
-// var formattedBody="Quotation ID :"+id+"\n"+"Length :"+L+" inch"+"\n"
-// +"Widh :"+W+" inch"+"\n"+"Height :"+H+" inch"+"\n"+"Quantity :"+Q+"\n"+"PLY :"+PL+"\n"+"Printed :"+P+"\n"+"UGSM :"+UG+"\n"
-// +"FGSM :"+FG+"\n"+"LGSM :"+LG+"\n"+"Cost per box :"+Cpb+"INR"+"\n"+"Order Cost :"+TC+"INR"+"\n"+"Quotation valid till :"+VT+" Days"+"\n"+"Time Stamp :"+date;
+var formattedBody="Quotation ID :".bold()+id+"\n"+"<b> Length : </b>"+L+" inch"+"\n"
++"Widh :"+W+" inch"+"\n"+"Height :"+H+" inch"+"\n"+"Quantity :"+Q+"\n"+"PLY :"+PL+"\n"+"Printed :"+P+"\n"+"UGSM :"+UG+"\n"
++"FGSM :"+FG+"\n"+"LGSM :"+LG+"\n"+"Cost per box :"+Cpb+"INR"+"\n"+"Order Cost :"+TC+"INR"+"\n"+"Quotation valid till :"+VT+" Days"+"\n"+"Time Stamp :"+date;
 
 
-var formattedBody = "<strong>Quotation ID:</strong> " + id + "<br>" +
-    "<strong>Length:</strong> " + L + " inch" + "<br>" +
-    "<strong>Width:</strong> " + W + " inch" + "<br>" +
-    "<strong>Height:</strong> " + H + " inch" + "<br>" +
-    "<strong>Quantity:</strong> " + Q + "<br>" +
-    "<strong>PLY:</strong> " + PL + "<br>" +
-    "<strong>Printed:</strong> " + P + "<br>" +
-    "<strong>UGSM:</strong> " + UG + "<br>" +
-    "<strong>FGSM:</strong> " + FG + "<br>" +
-    "<strong>LGSM:</strong> " + LG + "<br>" +
-    "<strong>Cost per box:</strong> " + Cpb + " INR" + "<br>" +
-    "<strong>Order Cost:</strong> " + TC + " INR" + "<br>" +
-    "<strong>Quotation valid till:</strong> " + VT + " Days" + "<br>" +
-    "<strong>Time Stamp:</strong> " + date;
+// var formattedBody = "<strong>Quotation ID:</strong> " + id + "<br>" +
+//     "<strong>Length:</strong> " + L + " inch" + "<br>" +
+//     "<strong>Width:</strong> " + W + " inch" + "<br>" +
+//     "<strong>Height:</strong> " + H + " inch" + "<br>" +
+//     "<strong>Quantity:</strong> " + Q + "<br>" +
+//     "<strong>PLY:</strong> " + PL + "<br>" +
+//     "<strong>Printed:</strong> " + P + "<br>" +
+//     "<strong>UGSM:</strong> " + UG + "<br>" +
+//     "<strong>FGSM:</strong> " + FG + "<br>" +
+//     "<strong>LGSM:</strong> " + LG + "<br>" +
+//     "<strong>Cost per box:</strong> " + Cpb + " INR" + "<br>" +
+//     "<strong>Order Cost:</strong> " + TC + " INR" + "<br>" +
+//     "<strong>Quotation valid till:</strong> " + VT + " Days" + "<br>" +
+//     "<strong>Time Stamp:</strong> " + date;
 
 var mailurl = "mailto:" + mail+ "?subject=Quote Details&body="+encodeURIComponent(formattedBody);
 // window.location.href = mailurl;
